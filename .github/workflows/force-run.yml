@@ -1,0 +1,10 @@
+name: Force Run
+on: 
+  push:
+    branches: [ master ]
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run crawler
+        run: echo "Testing"
